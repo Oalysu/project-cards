@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popins", sans-serif;
+}
+
+body {
+background-color: #f6f9ff;
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #434343
+}
+main.cards {
+    display: flex;
+    padding: 32px;
+    
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 70px 70px;
+    margin-left: 32px;
+    max-width: 300px;
+    border: 2px solid black;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+    
+}
+
+main.cards section.card img {
+    width: 100%;
+    line-height: auto;
+
+}
+
+main.cards section.card p {
+    margin-bottom: 12px;
+}
+
+main.cards section.card button {
+    padding: 0.5rem 4rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 80%;
+    font-weight: 400;
+
+}
+
+section.card h2 {
+    padding: 4px ;
+}
+section.card p {
+    padding: 5px;
+}
+
+#twitter button {
+     transition: 0.5s all;
+     cursor: pointer;
+}
+
+#twitter button:hover {
+    
+    background-color: #0f6380;
+}
+
+#twitter:hover {
+    animation: pulsate 2s ease-in-out;
+    border-color: #2ab3e0;
+}
+
+@keyframes  pulsate {
+    0%{
+        box-shadow: 0 0 25px #2ab3e0,
+        0  0 25px #005bc2;
+    }
+}
+
+
+#youtube button {
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+#youtube button:hover {
+    background-color: #7c0505;
+}
+
+
+#youtube:hover {
+    animation: pulsate-yt 2s ease-in-out;
+    border-color: #ef1a19;
+}
+
+@keyframes pulsate-yt {
+    0% {
+        box-shadow: 
+        0 0 25px #ef1a19,
+        0 0 25px #ee2525
+    }
+}
+
+#twitch button {
+    transition: 0.5s all;
+    cursor:pointer;
+}
+
+#twitch button:hover {
+    background-color: #2b174d;
+}
+
+#twitch:hover {
+    animation: pulsate-ttv 2s ease-in-out;
+    border-color: #512c93;
+}
+
+
+
